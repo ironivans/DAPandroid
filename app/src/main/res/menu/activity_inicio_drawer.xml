@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_comprar"
+            android:icon="@drawable/avion"
+            android:title="@string/botonComprar" />
+        <item
+            android:id="@+id/nav_checkin"
+            android:icon="@drawable/checkin"
+            android:title="@string/botonCheckin" />
+        <item
+            android:id="@+id/nav_destinos"
+            android:icon="@drawable/mapa"
+            android:title="@string/destinos" />
+        <item
+            android:id="@+id/nav_oficinas"
+            android:icon="@drawable/oficina"
+            android:title="@string/oficinas" />
+        <item
+            android:id="@+id/nav_contacto"
+            android:icon="@drawable/ic_email_black_24dp"
+            android:title="@string/contacto" />
+        <item
+            android:id="@+id/nav_preguntas"
+            android:icon="@drawable/preguntas"
+            android:title="@string/preguntas" />
+    </group>
+
+    <item android:title="@string/misArchivos">
+        <menu>
+
+            <item
+                android:id="@+id/nav_boarding"
+                android:icon="@drawable/checkin"
+                android:title="@string/menuBoarding" />
+            <item
+                android:id="@+id/nav_tickets"
+                android:icon="@drawable/avion"
+                android:title="@string/menuTickets" />
+        </menu>
+    </item>
+
+</menu>

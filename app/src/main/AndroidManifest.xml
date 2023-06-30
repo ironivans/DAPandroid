@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dapairline.ironivans.dap">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/nombre"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".Inicio"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Venta"
+            android:label="@string/title_activity_venta"
+            android:parentActivityName=".Inicio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Checkin"
+            android:label="@string/tituloCheckin"
+            android:parentActivityName=".Inicio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Oficinas"
+            android:label="@string/tituloOficina"
+            android:parentActivityName=".Inicio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".destinos"
+            android:label="@string/tituloDestinos"
+            android:parentActivityName=".Inicio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".preguntas"
+            android:label="@string/title_activity_preguntas"
+            android:parentActivityName=".Inicio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".tarifas"
+            android:label="@string/title_activity_tarifas"
+            android:parentActivityName=".preguntas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".equipaje"
+            android:label="@string/title_activity_equipaje"
+            android:parentActivityName=".preguntas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".informacion"
+            android:label="@string/title_activity_informacion"
+            android:parentActivityName=".preguntas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Boarding"
+            android:label="@string/title_activity_boarding"
+            android:parentActivityName=".Inicio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Tickets"
+            android:label="@string/title_activity_tickets"
+            android:parentActivityName=".Inicio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Contacto"
+            android:label="@string/title_activity_contacto"
+            android:parentActivityName=".Inicio"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".condiciones"
+            android:label="@string/title_activity_condiciones"
+            android:parentActivityName=".preguntas"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+    </application>
+
+</manifest>
